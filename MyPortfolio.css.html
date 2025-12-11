@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Lloyd Cimanez Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* BACKGROUND */
+    body {
+      background-image: url('vintage2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center; /* 🔥 Centers all inline content */
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: center; /* 🔥 Centers navbar */
+      align-items: center;
+      padding: 15px;
+      background: rgba(0,0,0,0.6);
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-size: 25px;
+      color: blue;
+    }
+    .logo {
+      color: blue;
+      margin-right: 40px;
+      font-size: 25px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      padding: 80px 40px;
+    }
+    .profile-img {
+      border-radius: 50%;
+      border: 3px solid blue;
+    }
+    .highlight {
+      color: Black;
+    }
+    .btn {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      width: 80%;
+      margin: auto; /* 🔥 Centers entire about block */
+      background: rgba(255,255,255,0.7);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    /* PROJECTS */
+    .projects {
+      padding: 40px 20px;
+    }
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* 🔥 Centers cards */
+      gap: 20px;
+    }
+    .project-card {
+      width: 260px;
+      background: rgba(255,255,255,0.75);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* CONTACT */
+    .contact ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">My Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <img src="mypic.jpg" width="180" height="180" alt="Profile Picture" class="profile-img">
+    <h2>Hello, I'm <span class="highlight">John Lloyd A. Cimanez</span></h2>
+    <p>IT Student • Aspiring Developer • Dreaming to be a Future Professional</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <h1>About Me</h1>
+    <p>
+      Hello there! I'm John Lloyd A. Cimanez, a 20-year-old born on May 31, 2005 in Brgy. Caminawit SJOM.
+      Family is everything to me, and I'm grateful for my parents beacuse they always their to support me for my dream in life. 
+      Currently, I’m studying on how to program and to build a better future not only for my self but also to help my family.
+      <br><br>
+      My hobbies are listening to music and sometimes playing online games, and lastly spending time with my niece.
+      I'm a big fan of Ben&Ben and Cup of Joe, and some of their songs is my favorite like Saranggola, Multo, Sagip, and Fireflies.
+      <br><br>
+      My favorite food is avocado with milk powder and ice. 
+      I love the quote: <b>"The best way to predict your future is to create it."</b>
+    </p>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <h1>My Projects</h1>
+    <div class="project-list">
+
+      <div class="project-card">
+        <img src="Cimanez.jpeg" width="200" height="200" alt="Story Project">
+        <h2>Story in the Book</h2>
+        <p>Explore the pages and check all my work.</p>
+        <a href="Activity no.1 Story.html" class="btn" target="_blank">View Story</a>
+      </div>
+
+      <div class="project-card">
+        <img src="Bulalo2.jpeg" width="200" height="200" alt="Recipe Project">
+        <h2>Recipe</h2>
+        <p>Online recipe form for customized bulalo instructions.</p>
+        <a href="Activity no.2 Recipe.html" class="btn">View Recipe</a>
+      </div>
+
+      <div class="project-card">
+        <img src="Bulalo3.jpeg" width="200" height="200" alt="Order Form Project">
+        <h2>Order Form</h2>
+        <p>A simple platform for customers to place bulalo orders.</p>
+        <a href="Activity no.3 OrderForm.html" class="btn">View Order Form</a>
+      </div>
+
+      <div class="project-card">
+        <img src="more2.jpg" width="200" height="200" alt="Bicycle Project">
+        <h2>Bicycle</h2>
+        <p>My edited bicycle image.</p>
+        <a href="Activity no.4 Bicycle.html" class="btn">View Bicycle</a>
+      </div>
+
+      <div class="project-card">
+        <img src="temp.jpg" width="200" height="200" alt="Converter Project">
+        <h2>Conversion</h2>
+        <p>My temperature converter tool.</p>
+        <a href="Activity no.5 Converter.html" class="btn">View Converter</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>If you want to reach out, message me here:</p>
+    <ul>
+      <li>Email: <a href="mailto:JohnlloydCimanez@gmail.com">JohnlloydCimanez@gmail.com</a></li>
+      <li>Facebook: <a href="https://www.facebook.com/john.lloyd.a.cimanez" target="_blank">John Lloyd Cimanez</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 John Lloyd Cimanez. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
